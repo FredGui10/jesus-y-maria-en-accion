@@ -469,3 +469,97 @@ body {
     width: 100%;
   }
 }
+
+/* COMO AYUDAR PAGE */
+
+.help-hero {
+  background: linear-gradient(135deg, var(--orange), #ffb15f);
+  color: white;
+  padding: 34px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.help-hero h1 {
+  margin-top: 0;
+  font-size: 36px;
+}
+
+.help-hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+.help-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.help-card {
+  background: white;
+  padding: 26px;
+  border-radius: 14px;
+  border-top: 6px solid var(--blue);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.help-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.help-card h2 {
+  color: var(--blue);
+  margin-top: 0;
+}
+
+.help-card p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.help-closing {
+  margin-top: 24px;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  border-left: 8px solid var(--orange);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.help-closing h2 {
+  color: var(--blue);
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.help-closing p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .help-hero h1 {
+    font-size: 28px;
+  }
+
+  .help-hero,
+  .help-closing,
+  .help-card {
+    padding: 22px;
+  }
+}

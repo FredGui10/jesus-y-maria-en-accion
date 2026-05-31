@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto y Apoyo | Jesús y María en Acción</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main class="page-layout">
+    <div id="sidebar"></div>
+
+    <section class="main-content">
+      <section class="contact-hero">
+        <h1>¿Necesitas ayuda o deseas colaborar?</h1>
+        <p>
+          Escríbenos si necesitas apoyo, acompañamiento, información o si deseas
+          formar parte de esta misión de servicio.
+        </p>
+      </section>
+
+      <section class="contact-card">
+        <form action="https://formspree.io/f/xeednrnz" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+
+            <div class="form-group">
+              <label for="apellido">Apellido *</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="motivo">Motivo de contacto *</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Seleccione una opción</option>
+              <option value="Necesito ayuda">Necesito ayuda</option>
+              <option value="Quiero colaborar como voluntario">Quiero colaborar como voluntario</option>
+              <option value="Quiero hacer una donación">Quiero hacer una donación</option>
+              <option value="Tengo una propuesta o proyecto">Tengo una propuesta o proyecto</option>
+              <option value="Solicitar información">Solicitar información</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="8" required placeholder="Cuéntanos en qué podemos ayudarte o cómo deseas colaborar."></textarea>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacidad" name="privacidad" required />
+            <label for="privacidad">
+              Acepto que Jesús y María en Acción utilice esta información únicamente para responder a mi solicitud.
+            </label>
+          </div>
+
+          <button type="submit" class="btn primary form-button">Enviar mensaje</button>
+        </form>
+      </section>
+    </section>
+
+    <aside class="right-column">
+      <div class="right-box">
+        <h3>Contacto</h3>
+        <p>Responderemos tu mensaje lo antes posible.</p>
+      </div>
+
+      <div class="right-box">
+        <h3>También puedes escribirnos para:</h3>
+        <p>Solicitar ayuda, ofrecer apoyo, proponer actividades o unirte como voluntario.</p>
+      </div>
+    </aside>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

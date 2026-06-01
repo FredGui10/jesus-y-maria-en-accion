@@ -711,3 +711,99 @@ body {
 .rosario-link:hover {
     background-color: var(--orange);
 }
+
+/* HOME EXTRA SECTIONS */
+
+.home-mission {
+  margin-top: 24px;
+  background: linear-gradient(135deg, var(--blue), var(--dark-blue));
+  color: white;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+}
+
+.home-mission h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.home-mission p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.home-actions {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.home-actions article {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  border-top: 5px solid var(--orange);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.home-actions h3 {
+  color: var(--blue);
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.home-actions p {
+  line-height: 1.6;
+}
+
+.home-call {
+  margin-top: 24px;
+  background: var(--light-orange);
+  padding: 32px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #ffd2aa;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.home-call h2 {
+  color: var(--blue);
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.home-call p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .home-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .home-mission,
+  .home-call {
+    padding: 22px;
+  }
+}
+
+.sidebar-impact {
+  margin-top: 18px;
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.sidebar-impact h3 {
+  color: var(--blue);
+  margin-top: 0;
+}
+
+.sidebar-impact p {
+  font-size: 15px;
+  line-height: 1.5;
+}

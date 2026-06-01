@@ -807,3 +807,30 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
+
+.footer-email {
+    margin-top: 10px;
+}
+
+.footer-email a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-email a:hover {
+    text-decoration: underline;
+}
+
+.footer-divider {
+    width: 120px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 15px auto;
+}
+
+.footer-credit {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    line-height: 1.6;
+}

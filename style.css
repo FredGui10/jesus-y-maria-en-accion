@@ -284,6 +284,31 @@ body {
   border-radius: 6px;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+}
+
+.footer-credit {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
 /* MOBILE */
 
 @media (max-width: 1050px) {

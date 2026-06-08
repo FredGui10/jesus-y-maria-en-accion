@@ -287,16 +287,35 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 12px;
-    margin-bottom: 10px;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    background: white;
+    border: 2px solid #f28c28;
+    border-radius: 12px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    border-color: #f28c28;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .social-links img {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
-    transition: transform 0.3s ease;
 }
 
 .social-links img:hover {

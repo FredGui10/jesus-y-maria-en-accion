@@ -2,9 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("header", "components/header.html");
   loadComponent("sidebar", "components/sidebar.html");
   loadComponent("footer", "components/footer.html");
+
+  setupRevealEffect();
 });
 
 function loadComponent(id, file) {
+  const element = document.getElementById(id);
+
+  if (!element) return;
+
   fetch(file)
     .then(response => {
       if (!response.ok) {
@@ -13,7 +19,7 @@ function loadComponent(id, file) {
       return response.text();
     })
     .then(data => {
-      document.getElementById(id).innerHTML = data;
+      element.innerHTML = data;
 
       if (id === "header") {
         setupMobileMenu();
@@ -40,8 +46,27 @@ function setActiveLink() {
 
   links.forEach(link => {
     const linkPage = link.getAttribute("href");
+
     if (linkPage === currentPage) {
       link.classList.add("active");
     }
   });
+}
+
+function setupRevealEffect() {
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const revealOnScroll = () => {
+    revealElements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementTop < windowHeight - 80) {
+        element.classList.add("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
 }

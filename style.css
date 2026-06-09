@@ -1201,3 +1201,267 @@ body {
         width: 70px;
     }
 }
+
+/* =========================
+   PROGRAMAS PAGE
+========================= */
+
+.programas-hero {
+    min-height: 320px;
+    background:
+        linear-gradient(rgba(7, 49, 95, 0.55), rgba(7, 49, 95, 0.55)),
+        url("images/diearchie.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.programas-hero-overlay {
+    color: white;
+    padding: 35px;
+}
+
+.programas-hero h1 {
+    font-size: 44px;
+    margin: 0 0 12px;
+}
+
+.programas-hero p {
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+.programas-hero span {
+    display: inline-block;
+    background: var(--orange);
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.program-intro {
+    margin-top: 24px;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    border-left: 8px solid var(--orange);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.program-intro h2 {
+    color: var(--blue);
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.program-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.program-section {
+    margin-top: 24px;
+    background: white;
+    padding: 26px;
+    border-radius: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    align-items: center;
+    border-left: 8px solid var(--orange);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.program-section.reverse {
+    direction: rtl;
+    border-left: none;
+    border-right: 8px solid var(--blue);
+}
+
+.program-section.reverse > * {
+    direction: ltr;
+}
+
+.program-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 4px solid var(--orange);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.program-image img:hover {
+    transform: scale(1.025);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+}
+
+.program-label {
+    display: inline-block;
+    background: var(--light-orange);
+    color: var(--orange);
+    font-weight: bold;
+    padding: 7px 14px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.program-text h2 {
+    color: var(--blue);
+    font-size: 31px;
+    margin: 0 0 12px;
+}
+
+.program-text p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.program-text ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.program-text li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.program-gallery {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.program-gallery article {
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    border-top: 6px solid var(--blue);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.program-gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.program-gallery h3 {
+    color: var(--blue);
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.program-gallery p {
+    line-height: 1.6;
+}
+
+.program-final {
+    margin-top: 24px;
+    background: linear-gradient(135deg, var(--dark-blue), var(--blue));
+    color: white;
+    padding: 36px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.program-final h2 {
+    font-size: 34px;
+    margin-top: 0;
+}
+
+.program-final p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto 22px;
+}
+
+/* Animaciones compartidas */
+
+.fade-in {
+    animation: fadeInPage 0.9s ease forwards;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Programas */
+
+@media (max-width: 800px) {
+    .programas-hero {
+        min-height: 260px;
+    }
+
+    .programas-hero h1 {
+        font-size: 32px;
+    }
+
+    .programas-hero p {
+        font-size: 17px;
+    }
+
+    .program-intro,
+    .program-section,
+    .program-final {
+        padding: 22px;
+    }
+
+    .program-section,
+    .program-section.reverse,
+    .program-gallery {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .program-section.reverse {
+        border-left: 8px solid var(--orange);
+        border-right: none;
+    }
+
+    .program-image img {
+        height: 250px;
+    }
+
+    .program-gallery img {
+        height: 220px;
+    }
+
+    .program-intro h2,
+    .program-text h2,
+    .program-final h2 {
+        font-size: 27px;
+    }
+}

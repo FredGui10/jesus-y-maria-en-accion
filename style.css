@@ -913,6 +913,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }

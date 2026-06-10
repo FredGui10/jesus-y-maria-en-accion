@@ -1466,3 +1466,27 @@ body {
         font-size: 27px;
     }
 }
+
+/* FOOTER MENU */
+
+.footer-menu {
+    margin: 20px 0;
+    text-align: center;
+    line-height: 2;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: var(--orange);
+}
+
+.footer-menu span {
+    color: rgba(255,255,255,0.5);
+    margin: 0 8px;
+}

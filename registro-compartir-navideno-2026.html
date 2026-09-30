@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Registro Compartir Navideño 2026 | Jesús y María en Acción</title>
+
+  <meta
+    name="description"
+    content="Formulario de inscripción para el Compartir Navideño 2026 de Jesús y María en Acción y la Comunidad Católica en Idioma Español de Hamburgo."
+  />
+
+  <meta
+    name="keywords"
+    content="Compartir Navideño 2026, registro Navidad Hamburgo, Jesús y María en Acción, comunidad católica hispana Hamburgo"
+  />
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon/favicon.png"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <div id="header"></div>
+
+
+  <!-- =====================================================
+       CONTENIDO PRINCIPAL
+       ===================================================== -->
+
+  <main class="page-layout">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar"></div>
+
+
+    <!-- ===================================================
+         CONTENIDO DEL FORMULARIO
+         =================================================== -->
+
+    <section class="main-content">
+
+      <div class="navidad-form-page">
+
+
+        <!-- =================================================
+             ENCABEZADO
+             ================================================= -->
+
+        <section class="navidad-form-header">
+
+          <div class="navidad-form-logos">
+
+            <img
+              src="images/logo-comunidad.jpeg"
+              alt="Comunidad Católica en Idioma Español de Hamburgo"
+              class="navidad-form-logo comunidad-logo"
+            />
+
+            <div class="navidad-form-divider"></div>
+
+            <img
+              src="images/logo-jma.png"
+              alt="Jesús y María en Acción"
+              class="navidad-form-logo grupo-logo"
+            />
+
+          </div>
+
+
+          <p class="navidad-form-intro">
+            Compartir Navideño
+          </p>
+
+          <h1>
+            ¡Regístrate!
+          </h1>
+
+          <p class="navidad-form-subtitle">
+            Sábado, 21 de Noviembre de 2026
+            <br />
+            11:00 a 15:00 horas
+          </p>
+
+          <p class="navidad-form-welcome">
+            Nos alegra mucho que quieras compartir este día
+            con nosotros. ❤️
+          </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FORMULARIO
+             ================================================= -->
+
+        <form
+          id="registroNavidadForm"
+          class="navidad-registration-form"
+          method="POST"
+        >
+
+
+          <!-- =================================================
+               1. DATOS DE CONTACTO
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Datos de contacto
+            </legend>
+
+            <p class="navidad-form-section-intro">
+              Cuéntanos quién realizará la inscripción.
+            </p>
+
+
+            <div class="navidad-form-group">
+
+              <label for="nombre">
+                Nombre completo <span class="required">*</span>
+              </label>
+
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre completo"
+                required
+              />
+
+            </div>
+
+
+            <div class="navidad-form-row">
+
+              <div class="navidad-form-group">
+
+                <label for="telefono">
+                  Teléfono
+                  <span class="optional">(Opcional)</span>
+                </label>
+
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="+49 ..."
+                />
+
+              </div>
+
+
+              <div class="navidad-form-group">
+
+                <label for="email">
+                  Correo electrónico
+                  <span class="optional">(Opcional)</span>
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="correo@ejemplo.com"
+                />
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               2. PERSONAS QUE ASISTIRÁN
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Personas que asistirán
+            </legend>
+
+            <p class="navidad-form-section-intro">
+              Esta información nos ayudará a preparar el
+              encuentro y los detalles para los niños.
+            </p>
+
+
+            <div class="navidad-form-group">
+
+              <label for="adultos">
+                ¿Cuántos adultos asistirán?
+                <span class="required">*</span>
+              </label>
+
+              <select
+                id="adultos"
+                name="adultos"
+                required
+              >
+
+                <option value="">
+                  Selecciona una cantidad
+                </option>
+
+                <option value="1">1 adulto</option>
+                <option value="2">2 adultos</option>
+                <option value="3">3 adultos</option>
+                <option value="4">4 adultos</option>
+                <option value="5">5 adultos</option>
+                <option value="6">6 adultos</option>
+                <option value="7">7 adultos</option>
+                <option value="8">8 adultos</option>
+                <option value="9">9 adultos</option>
+                <option value="10">10 adultos</option>
+
+              </select>
+
+            </div>
+
+
+
+            <div class="navidad-form-row">
+
+              <!-- NIÑOS -->
+
+              <div class="navidad-form-group">
+
+                <label for="ninos">
+                  ¿Cuántos niños asistirán?
+                  <span class="required">*</span>
+                </label>
+
+                <select
+                  id="ninos"
+                  name="ninos"
+                  required
+                >
+
+                  <option value="">
+                    Selecciona
+                  </option>
+
+                  <option value="0">Ninguno</option>
+                  <option value="1">1 niño</option>
+                  <option value="2">2 niños</option>
+                  <option value="3">3 niños</option>
+                  <option value="4">4 niños</option>
+                  <option value="5">5 niños</option>
+                  <option value="6">6 niños</option>
+                  <option value="7">7 niños</option>
+                  <option value="8">8 niños</option>
+                  <option value="9">9 niños</option>
+                  <option value="10">10 niños</option>
+
+                </select>
+
+              </div>
+
+
+              <!-- NIÑAS -->
+
+              <div class="navidad-form-group">
+
+                <label for="ninas">
+                  ¿Cuántas niñas asistirán?
+                  <span class="required">*</span>
+                </label>
+
+                <select
+                  id="ninas"
+                  name="ninas"
+                  required
+                >
+
+                  <option value="">
+                    Selecciona
+                  </option>
+
+                  <option value="0">Ninguna</option>
+                  <option value="1">1 niña</option>
+                  <option value="2">2 niñas</option>
+                  <option value="3">3 niñas</option>
+                  <option value="4">4 niñas</option>
+                  <option value="5">5 niñas</option>
+                  <option value="6">6 niñas</option>
+                  <option value="7">7 niñas</option>
+                  <option value="8">8 niñas</option>
+                  <option value="9">9 niñas</option>
+                  <option value="10">10 niñas</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+
+            <!-- EDADES -->
+
+            <div class="navidad-form-group">
+
+              <label for="edadesNinos">
+                Edades de los niños
+              </label>
+
+              <input
+                type="text"
+                id="edadesNinos"
+                name="edades_ninos"
+                placeholder="Ejemplo: 4, 7, 10"
+              />
+
+              <small>
+                Si hay varios niños, puedes escribir sus edades
+                separadas por comas.
+              </small>
+
+            </div>
+
+
+            <div class="navidad-form-group">
+
+              <label for="edadesNinas">
+                Edades de las niñas
+              </label>
+
+              <input
+                type="text"
+                id="edadesNinas"
+                name="edades_ninas"
+                placeholder="Ejemplo: 3, 6, 9"
+              />
+
+              <small>
+                Si hay varias niñas, puedes escribir sus edades
+                separadas por comas.
+              </small>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               3. COLABORACIÓN
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Colaboración
+            </legend>
+
+            <p class="navidad-form-section-intro">
+              Si deseas ayudarnos con la organización,
+              estaremos muy agradecidos.
+            </p>
+
+
+            <div class="navidad-form-group">
+
+              <label>
+                ¿Te gustaría colaborar con la organización
+                del evento?
+                <span class="required">*</span>
+              </label>
+
+
+              <div class="navidad-radio-group">
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="quiere_colaborar"
+                    value="Si"
+                    required
+                  />
+
+                  <span>Sí</span>
+
+                </label>
+
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="quiere_colaborar"
+                    value="No"
+                  />
+
+                  <span>No</span>
+
+                </label>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="navidad-form-group">
+
+              <label for="tipoColaboracion">
+                ¿Cómo deseas colaborar?
+              </label>
+
+              <select
+                id="tipoColaboracion"
+                name="tipo_colaboracion"
+              >
+
+                <option value="">
+                  Selecciona una opción
+                </option>
+
+                <option value="Comida">
+                  Comida
+                </option>
+
+                <option value="Organizacion">
+                  Organización
+                </option>
+
+                <option value="Regalos">
+                  Regalos
+                </option>
+
+                <option value="Otra">
+                  Otra
+                </option>
+
+              </select>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               4. COMUNIDAD
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Comunidad
+            </legend>
+
+
+            <div class="navidad-form-group">
+
+              <label for="comunidad">
+                ¿Perteneces a alguna comunidad católica
+                de Hamburgo?
+                <span class="required">*</span>
+              </label>
+
+              <select
+                id="comunidad"
+                name="comunidad"
+                required
+              >
+
+                <option value="">
+                  Selecciona una opción
+                </option>
+
+                <option value="St. Elisabeth">
+                  St. Elisabeth
+                </option>
+
+                <option value="St. Bonifatius">
+                  St. Bonifatius
+                </option>
+
+                <option value="No pertenezco">
+                  No pertenezco a ninguna
+                </option>
+
+                <option value="Otra">
+                  Otra
+                </option>
+
+              </select>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               5. FOTOGRAFÍAS
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Fotografías
+            </legend>
+
+
+            <div class="navidad-form-group">
+
+              <label>
+                ¿Autorizas la toma y utilización de fotografías
+                durante el evento para fines de comunicación
+                de “Jesús y María en Acción”?
+                <span class="required">*</span>
+              </label>
+
+
+              <div class="navidad-radio-group">
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="consentimiento_fotos"
+                    value="Si"
+                    required
+                  />
+
+                  <span>Sí, autorizo</span>
+
+                </label>
+
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="consentimiento_fotos"
+                    value="No"
+                  />
+
+                  <span>No autorizo</span>
+
+                </label>
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               6. WHATSAPP
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Grupo de WhatsApp
+            </legend>
+
+
+            <div class="navidad-form-group">
+
+              <label>
+                ¿Quieres formar parte del grupo de WhatsApp
+                para la organización y coordinación del evento?
+                <span class="required">*</span>
+              </label>
+
+
+              <div class="navidad-radio-group">
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="grupo_whatsapp"
+                    value="Si"
+                    required
+                  />
+
+                  <span>Sí</span>
+
+                </label>
+
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="grupo_whatsapp"
+                    value="No"
+                  />
+
+                  <span>No</span>
+
+                </label>
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               7. INFORMACIÓN FUTURA
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Información sobre futuros eventos
+            </legend>
+
+
+            <div class="navidad-form-group">
+
+              <label>
+                Autorizo al grupo “Jesús y María en Acción”
+                a enviarme vía correo electrónico información
+                sobre futuros eventos y actividades de la
+                comunidad católica hispanohablante de Hamburgo.
+                <span class="required">*</span>
+              </label>
+
+
+              <div class="navidad-radio-group">
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="informacion_futura"
+                    value="Si"
+                    required
+                  />
+
+                  <span>Sí, autorizo</span>
+
+                </label>
+
+
+                <label class="navidad-radio-option">
+
+                  <input
+                    type="radio"
+                    name="informacion_futura"
+                    value="No"
+                  />
+
+                  <span>No autorizo</span>
+
+                </label>
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               8. COMENTARIO
+               ================================================= -->
+
+          <fieldset class="navidad-form-section">
+
+            <legend>
+              Comentarios
+            </legend>
+
+
+            <div class="navidad-form-group">
+
+              <label for="comentario">
+                ¿Quieres dejarnos algún comentario?
+              </label>
+
+              <textarea
+                id="comentario"
+                name="comentario"
+                rows="6"
+                placeholder="Escribe aquí tu mensaje..."
+              ></textarea>
+
+            </div>
+
+          </fieldset>
+
+
+
+          <!-- =================================================
+               INFORMACIÓN
+               ================================================= -->
+
+          <div class="navidad-form-note">
+
+            <p>
+              <strong>❤️ Gracias por formar parte de este
+              encuentro.</strong>
+            </p>
+
+            <p>
+              Con tu inscripción nos ayudas a preparar este
+              día con cariño para todas las familias.
+            </p>
+
+          </div>
+
+
+
+          <!-- =================================================
+               BOTÓN
+               ================================================= -->
+
+          <div class="navidad-form-submit">
+
+            <button
+              type="submit"
+              class="navidad-submit-btn"
+            >
+              🎄 ENVIAR REGISTRO
+            </button>
+
+          </div>
+
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         COLUMNA DERECHA
+         ===================================================== -->
+
+    <aside class="right-column">
+
+      <div class="right-box navidad-side-box">
+
+        <h3>
+          🎄 Compartir Navideño 2026
+        </h3>
+
+        <p>
+          <strong>
+            Sábado, 21 de Noviembre de 2026
+          </strong>
+        </p>
+
+        <p>
+          11:00 a 15:00 horas
+        </p>
+
+        <p>
+          Danziger Straße 64, Hamburg
+        </p>
+
+        <p>
+          U-Bahn · U1 Lohmühlenstraße /
+          Hamburg HBF
+        </p>
+
+      </div>
+
+
+      <div class="right-box">
+
+        <h3>
+          ❤️ ¡Te esperamos!
+        </h3>
+
+        <p>
+          Queremos compartir contigo un día lleno de
+          alegría, unión, amistad y espíritu navideño.
+        </p>
+
+      </div>
+
+
+      <div class="right-box">
+
+        <h3>
+          ¿Necesitas ayuda?
+        </h3>
+
+        <p>
+          Si tienes alguna pregunta sobre el evento,
+          puedes ponerte en contacto con nosotros.
+        </p>
+
+        <a href="contacto.html">
+          Ir a contacto
+        </a>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <div id="footer"></div>
+
+
+  <!-- JAVASCRIPT PRINCIPAL -->
+  <script src="script.js"></script>
+
+</body>
+</html>

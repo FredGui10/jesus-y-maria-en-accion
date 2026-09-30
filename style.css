@@ -3225,3 +3225,608 @@ body {
   }
 
 }
+
+/* =========================================================
+   COMPARTIR NAVIDEÑO 2026
+   DISEÑO RESPONSIVE
+   ========================================================= */
+
+.navidad-event-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Evita que cualquier elemento provoque scroll horizontal */
+.navidad-event-page,
+.navidad-event-page * {
+  box-sizing: border-box;
+}
+
+.navidad-event-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.navidad-hero {
+  width: 100%;
+  text-align: center;
+  padding: 35px 30px 30px;
+  overflow: hidden;
+}
+
+.navidad-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.navidad-logo {
+  object-fit: contain;
+}
+
+.navidad-logo.comunidad-logo {
+  width: 170px;
+  max-width: 35%;
+}
+
+.navidad-logo.grupo-logo {
+  width: 145px;
+  max-width: 30%;
+}
+
+.navidad-logo-divider {
+  width: 2px;
+  height: 100px;
+  background: #b8862c;
+  flex-shrink: 0;
+}
+
+.navidad-intro {
+  margin: 10px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 3vw, 44px);
+  color: #0b3d32;
+}
+
+.navidad-hero h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 8vw, 105px);
+  line-height: 0.9;
+  color: #073b30;
+  letter-spacing: -2px;
+}
+
+.navidad-hero h1 span {
+  display: block;
+  color: #c47b16;
+}
+
+.navidad-year {
+  margin-top: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 5vw, 70px);
+  font-weight: bold;
+  color: #073b30;
+}
+
+.navidad-decoration {
+  color: #c47b16;
+  font-size: 35px;
+  margin: 5px 0;
+}
+
+.navidad-subtitle {
+  margin: 15px auto 0;
+  max-width: 800px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 2.2vw, 30px);
+  line-height: 1.25;
+  color: #0b3d32;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL EVENTO
+   ========================================================= */
+
+.navidad-info {
+  width: 100%;
+  text-align: center;
+  padding: 20px 25px 30px;
+}
+
+.navidad-info-item {
+  margin-bottom: 8px;
+}
+
+.navidad-info-item strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.2;
+  color: #073b30;
+}
+
+.navidad-transport {
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 600;
+  color: #073b30;
+}
+
+
+/* =========================================================
+   WELCOME
+   ========================================================= */
+
+.navidad-welcome {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.navidad-gift {
+  font-size: 70px;
+  flex-shrink: 0;
+}
+
+.navidad-welcome-content {
+  text-align: left;
+}
+
+.navidad-welcome-content h2 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3.5vw, 46px);
+  color: #073b30;
+}
+
+.navidad-welcome-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.navidad-welcome-main {
+  font-size: 22px !important;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   REGISTRO
+   ========================================================= */
+
+.navidad-registration {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 35px 30px;
+  text-align: center;
+}
+
+.navidad-registration h2 {
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 52px);
+  color: #073b30;
+}
+
+.navidad-registration p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.navidad-registration-highlight {
+  font-weight: bold;
+  color: #9b1c1c !important;
+}
+
+.navidad-register-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.navidad-experience {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.navidad-experience h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 4vw, 50px);
+  color: #073b30;
+}
+
+.navidad-experience > p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.navidad-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.navidad-experience-grid article {
+  padding: 25px 20px;
+}
+
+.navidad-experience-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.navidad-experience-grid h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  color: #073b30;
+}
+
+.navidad-experience-grid p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FINAL
+   ========================================================= */
+
+.navidad-final {
+  text-align: center;
+  padding: 50px 25px 60px;
+}
+
+.navidad-final-message {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(50px, 6vw, 80px);
+  font-style: italic;
+  color: #073b30;
+}
+
+.navidad-final > p:not(.navidad-final-message):not(.navidad-signature) {
+  font-size: 20px;
+}
+
+.navidad-heart {
+  margin: 15px 0;
+  font-size: 50px;
+  color: #c47b16;
+}
+
+.navidad-signature {
+  margin-top: 25px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #073b30;
+}
+
+
+/* =========================================================
+   COLUMNA DERECHA
+   ========================================================= */
+
+.navidad-side-box {
+  text-align: center;
+}
+
+.navidad-side-box h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #073b30;
+}
+
+
+/* =========================================================
+   TABLET / LAPTOP PEQUEÑA
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .navidad-event-page {
+    max-width: 100%;
+  }
+
+  .navidad-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navidad-welcome {
+    max-width: 95%;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .navidad-hero {
+    padding-top: 25px;
+  }
+
+  .navidad-logos {
+    gap: 20px;
+  }
+
+  .navidad-logo.comunidad-logo {
+    width: 145px;
+  }
+
+  .navidad-logo.grupo-logo {
+    width: 125px;
+  }
+
+  .navidad-logo-divider {
+    height: 80px;
+  }
+
+  .navidad-welcome {
+    max-width: 100%;
+  }
+
+  .navidad-experience-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .navidad-event-page {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navidad-hero {
+    padding: 25px 15px 20px;
+  }
+
+
+  /* LOGOS */
+
+  .navidad-logos {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .navidad-logo.comunidad-logo {
+    width: 120px;
+    max-width: 42%;
+  }
+
+  .navidad-logo.grupo-logo {
+    width: 105px;
+    max-width: 36%;
+  }
+
+  .navidad-logo-divider {
+    height: 65px;
+    width: 1px;
+  }
+
+
+  /* TITULO */
+
+  .navidad-intro {
+    font-size: 27px;
+  }
+
+  .navidad-hero h1 {
+    font-size: clamp(48px, 14vw, 72px);
+    line-height: 0.88;
+    letter-spacing: -1px;
+  }
+
+  .navidad-year {
+    font-size: 48px;
+  }
+
+  .navidad-decoration {
+    font-size: 28px;
+  }
+
+  .navidad-subtitle {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+
+  /* INFORMACIÓN */
+
+  .navidad-info {
+    padding: 15px 12px 25px;
+  }
+
+  .navidad-info-item strong {
+    font-size: clamp(24px, 7vw, 32px);
+  }
+
+  .navidad-transport {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+
+  /* WELCOME */
+
+  .navidad-welcome {
+    display: block;
+    padding: 20px 18px;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .navidad-gift {
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+
+  .navidad-welcome-content {
+    text-align: center;
+  }
+
+  .navidad-welcome-content h2 {
+    font-size: 32px;
+  }
+
+  .navidad-welcome-content p {
+    font-size: 17px;
+  }
+
+  .navidad-welcome-main {
+    font-size: 20px !important;
+  }
+
+
+  /* REGISTRO */
+
+  .navidad-registration {
+    padding: 25px 18px;
+    margin: 20px auto;
+  }
+
+  .navidad-registration h2 {
+    font-size: 36px;
+  }
+
+  .navidad-registration p {
+    font-size: 17px;
+  }
+
+  .navidad-register-btn {
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+  }
+
+
+  /* EXPERIENCIA */
+
+  .navidad-experience {
+    padding: 15px;
+    margin: 25px auto;
+  }
+
+  .navidad-experience h2 {
+    font-size: 35px;
+  }
+
+  .navidad-experience > p {
+    font-size: 17px;
+  }
+
+  .navidad-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .navidad-experience-grid article {
+    padding: 18px 15px;
+  }
+
+
+  /* FINAL */
+
+  .navidad-final {
+    padding: 35px 15px 45px;
+  }
+
+  .navidad-final-message {
+    font-size: 55px;
+  }
+
+  .navidad-final > p:not(.navidad-final-message):not(.navidad-signature) {
+    font-size: 18px;
+  }
+
+  .navidad-signature {
+    font-size: 16px;
+  }
+
+}
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .navidad-logo.comunidad-logo {
+    width: 105px;
+  }
+
+  .navidad-logo.grupo-logo {
+    width: 90px;
+  }
+
+  .navidad-logo-divider {
+    height: 55px;
+  }
+
+  .navidad-intro {
+    font-size: 24px;
+  }
+
+  .navidad-hero h1 {
+    font-size: 45px;
+  }
+
+  .navidad-year {
+    font-size: 42px;
+  }
+
+  .navidad-subtitle {
+    font-size: 18px;
+  }
+
+  .navidad-info-item strong {
+    font-size: 23px;
+  }
+
+  .navidad-transport {
+    font-size: 15px;
+  }
+
+}

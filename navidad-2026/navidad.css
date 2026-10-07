@@ -1101,3 +1101,1190 @@ body {
   }
 
 }
+
+/* =========================================================
+   COMPARTIR NAVIDEÑO 2026
+   DISEÑO EXCLUSIVO DEL EVENTO
+   ========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+  --navidad-verde: #073b2f;
+  --navidad-verde-claro: #155b48;
+  --navidad-dorado: #c58a22;
+  --navidad-dorado-claro: #e5b85c;
+  --navidad-rojo: #c62828;
+  --navidad-rojo-oscuro: #a91f1f;
+
+  --navidad-crema: #fffaf0;
+  --navidad-crema-2: #f8eedb;
+  --navidad-blanco: #ffffff;
+
+  --navidad-texto: #173d32;
+  --navidad-borde: rgba(197, 138, 34, 0.45);
+
+  --navidad-sombra:
+    0 12px 35px rgba(40, 30, 10, 0.12);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+.navidad-body,
+.navidad-body * {
+  box-sizing: border-box;
+}
+
+
+.navidad-body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color: var(--navidad-texto);
+
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(197, 138, 34, 0.10) 0,
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(198, 40, 40, 0.07) 0,
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 15% 85%,
+      rgba(21, 91, 72, 0.08) 0,
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #fffdf8 0%,
+      #fff8e9 48%,
+      #fffdf7 100%
+    );
+}
+
+
+/* =========================================================
+   DECORACIÓN GENERAL
+   ========================================================= */
+
+.navidad-body::before {
+  content: "✦";
+  position: fixed;
+
+  top: 30px;
+  left: 4%;
+
+  font-size: 30px;
+  color: var(--navidad-dorado);
+
+  opacity: 0.45;
+
+  pointer-events: none;
+}
+
+
+.navidad-body::after {
+  content: "✦";
+  position: fixed;
+
+  right: 4%;
+  bottom: 45px;
+
+  font-size: 28px;
+  color: var(--navidad-dorado);
+
+  opacity: 0.45;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   PÁGINA
+   ========================================================= */
+
+.navidad-page {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+  padding: 35px 22px 70px;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.navidad-header {
+  position: relative;
+
+  text-align: center;
+
+  padding: 38px 30px 35px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255,255,255,0.95),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #fffdf8,
+      #fff4dd
+    );
+
+  border: 1px solid var(--navidad-borde);
+
+  border-radius: 28px 28px 0 0;
+
+  box-shadow: var(--navidad-sombra);
+
+  overflow: hidden;
+}
+
+
+/* Decoración superior */
+
+.navidad-header::before,
+.navidad-header::after {
+  content: "✦";
+  position: absolute;
+
+  color: var(--navidad-dorado);
+
+  font-size: 38px;
+
+  opacity: 0.75;
+}
+
+
+.navidad-header::before {
+  left: 28px;
+  top: 24px;
+}
+
+
+.navidad-header::after {
+  right: 28px;
+  top: 24px;
+}
+
+
+/* =========================================================
+   LOGOS
+   ========================================================= */
+
+.navidad-logos {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  margin-bottom: 30px;
+}
+
+
+.navidad-logo-box {
+  width: 170px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 2px solid var(--navidad-dorado);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 18px rgba(60, 40, 10, 0.14),
+    inset 0 0 0 4px rgba(197, 138, 34, 0.10);
+}
+
+
+.navidad-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+.navidad-logo-separator {
+  color: var(--navidad-dorado);
+
+  font-size: 25px;
+
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.navidad-title-intro {
+  margin: 0 0 8px;
+
+  font-size: clamp(24px, 4vw, 38px);
+
+  color: var(--navidad-verde);
+}
+
+
+.navidad-title h1 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(55px, 9vw, 100px);
+
+  line-height: 0.88;
+
+  letter-spacing: -3px;
+
+  color: var(--navidad-verde);
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+.navidad-title h1 span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--navidad-dorado);
+
+  font-size: 0.82em;
+}
+
+
+.navidad-year {
+  margin-top: 12px;
+
+  font-size: clamp(34px, 5vw, 55px);
+
+  font-weight: bold;
+
+  color: var(--navidad-verde);
+}
+
+
+/* =========================================================
+   DECORACIÓN
+   ========================================================= */
+
+.navidad-divider {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin: 20px auto;
+
+  max-width: 550px;
+
+  color: var(--navidad-dorado);
+
+  font-size: 25px;
+}
+
+
+.navidad-divider::before,
+.navidad-divider::after {
+  content: "";
+
+  height: 1px;
+
+  flex: 1;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--navidad-dorado)
+    );
+}
+
+
+.navidad-divider::after {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      var(--navidad-dorado)
+    );
+}
+
+
+.navidad-subtitle {
+  margin: 0 auto;
+
+  max-width: 720px;
+
+  font-size: clamp(18px, 2.5vw, 25px);
+
+  line-height: 1.45;
+
+  color: var(--navidad-verde);
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL EVENTO
+   ========================================================= */
+
+.navidad-form-event-info {
+  padding: 30px 25px;
+
+  text-align: center;
+
+  background: var(--navidad-verde);
+
+  color: white;
+
+  border-left: 1px solid var(--navidad-dorado);
+  border-right: 1px solid var(--navidad-dorado);
+
+  box-shadow: var(--navidad-sombra);
+}
+
+
+.navidad-form-event-info > div {
+  margin: 7px 0;
+
+  font-size: clamp(17px, 2.5vw, 23px);
+}
+
+
+.navidad-form-event-info strong {
+  color: #fffdf5;
+}
+
+
+.navidad-form-event-info .navidad-transport {
+  margin-top: 13px;
+
+  font-size: clamp(15px, 2vw, 19px);
+
+  color: var(--navidad-dorado-claro);
+
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   INTRO DEL FORMULARIO
+   ========================================================= */
+
+.navidad-form-intro {
+  text-align: center;
+
+  padding: 45px 25px 35px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffaf0,
+      #fffdf8
+    );
+}
+
+
+.navidad-form-gift {
+  font-size: 48px;
+
+  margin-bottom: 8px;
+}
+
+
+.navidad-form-intro h2 {
+  margin: 0 0 15px;
+
+  font-size: clamp(28px, 5vw, 42px);
+
+  color: var(--navidad-verde);
+}
+
+
+.navidad-form-intro p {
+  max-width: 720px;
+
+  margin: 10px auto;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+
+.navidad-form-required-note {
+  font-size: 15px !important;
+
+  color: #735f35;
+}
+
+
+/* =========================================================
+   CONTENEDOR DEL FORMULARIO
+   ========================================================= */
+
+.navidad-form-container {
+  padding: 15px 25px 45px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf8,
+      #fff8e9
+    );
+}
+
+
+/* =========================================================
+   SECCIONES
+   ========================================================= */
+
+.navidad-form-section {
+  max-width: 780px;
+
+  margin: 0 auto 30px;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid var(--navidad-borde);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(60, 40, 10, 0.08);
+}
+
+
+.navidad-form-section-title {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-bottom: 28px;
+
+  color: var(--navidad-dorado);
+}
+
+
+.navidad-form-section-title h2 {
+  margin: 0;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(22px, 3vw, 29px);
+
+  text-align: center;
+}
+
+
+.navidad-form-section-title span {
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.navidad-form-group {
+  margin-bottom: 24px;
+}
+
+
+.navidad-form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+.navidad-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  color: var(--navidad-verde);
+}
+
+
+.navidad-form-group label > span {
+  color: var(--navidad-rojo);
+}
+
+
+.navidad-form-group label small {
+  font-size: 13px;
+
+  font-weight: normal;
+
+  color: #777;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.navidad-form input[type="text"],
+.navidad-form input[type="tel"],
+.navidad-form input[type="email"],
+.navidad-form select,
+.navidad-form textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #d8c79e;
+
+  border-radius: 10px;
+
+  background: #fffdf8;
+
+  color: #243b32;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.navidad-form input[type="text"]:focus,
+.navidad-form input[type="tel"]:focus,
+.navidad-form input[type="email"]:focus,
+.navidad-form select:focus,
+.navidad-form textarea:focus {
+  border-color: var(--navidad-dorado);
+
+  background: white;
+
+  box-shadow:
+    0 0 0 3px rgba(197, 138, 34, 0.14);
+}
+
+
+.navidad-form textarea {
+  min-height: 130px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+
+.navidad-form input::placeholder,
+.navidad-form textarea::placeholder {
+  color: #9b927e;
+}
+
+
+/* =========================================================
+   RADIO BUTTONS
+   ========================================================= */
+
+.navidad-radio-group {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 10px;
+}
+
+
+.navidad-radio-option {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 9px;
+
+  width: auto !important;
+
+  margin: 0 !important;
+
+  padding: 11px 18px;
+
+  border: 1px solid #d8c79e;
+
+  border-radius: 30px;
+
+  background: #fffdf8;
+
+  cursor: pointer;
+
+  font-weight: normal !important;
+
+  color: var(--navidad-verde) !important;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.navidad-radio-option:hover {
+  border-color: var(--navidad-dorado);
+
+  background: #fff8e9;
+}
+
+
+.navidad-radio-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+
+  accent-color: var(--navidad-verde);
+
+  cursor: pointer;
+}
+
+
+.navidad-radio-option span {
+  color: var(--navidad-verde) !important;
+}
+
+
+/* =========================================================
+   TEXTO DE AYUDA
+   ========================================================= */
+
+.navidad-form-help {
+  margin: 0 0 12px;
+
+  padding: 12px 15px;
+
+  border-left: 3px solid var(--navidad-dorado);
+
+  background: #fffaf0;
+
+  color: #625a4a;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   BOTÓN DE ENVÍO
+   ========================================================= */
+
+.navidad-form-submit {
+  max-width: 780px;
+
+  margin: 15px auto 0;
+
+  text-align: center;
+
+  padding: 35px 20px 20px;
+}
+
+
+.navidad-button {
+  display: inline-block;
+
+  width: min(100%, 430px);
+
+  padding: 16px 25px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--navidad-rojo),
+      var(--navidad-rojo-oscuro)
+    );
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(166, 31, 31, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.navidad-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 23px rgba(166, 31, 31, 0.30);
+}
+
+
+.navidad-button:active {
+  transform: translateY(0);
+}
+
+
+.navidad-form-submit p {
+  margin: 16px auto 0;
+
+  max-width: 550px;
+
+  color: #74684f;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   VOLVER
+   ========================================================= */
+
+.navidad-form-back {
+  text-align: center;
+
+  padding: 25px 20px;
+
+  background: #fff8e9;
+
+  border-top: 1px solid var(--navidad-borde);
+}
+
+
+.navidad-form-back a {
+  color: var(--navidad-verde);
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+
+.navidad-form-back a:hover {
+  color: var(--navidad-rojo);
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   ENLACE A LA PÁGINA DEL GRUPO
+   ========================================================= */
+
+.navidad-website {
+  text-align: center;
+
+  padding: 30px 20px 10px;
+}
+
+
+.navidad-website p {
+  margin: 0 0 10px;
+
+  color: #6f654f;
+
+  font-size: 15px;
+}
+
+
+.navidad-website a {
+  display: inline-block;
+
+  padding: 11px 22px;
+
+  border: 1px solid var(--navidad-dorado);
+
+  border-radius: 30px;
+
+  color: var(--navidad-verde);
+
+  background: rgba(255, 255, 255, 0.7);
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.navidad-website a:hover {
+  background: var(--navidad-verde);
+
+  color: white;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .navidad-page {
+    padding: 20px 12px 50px;
+  }
+
+
+  .navidad-header {
+    padding: 30px 18px;
+  }
+
+
+  .navidad-logo-box {
+    width: 145px;
+    height: 130px;
+  }
+
+
+  .navidad-form-section {
+    padding: 25px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .navidad-page {
+    padding: 8px 6px 35px;
+  }
+
+
+  .navidad-header {
+    padding: 28px 12px 25px;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+
+  .navidad-header::before,
+  .navidad-header::after {
+    font-size: 25px;
+  }
+
+
+  .navidad-header::before {
+    left: 12px;
+    top: 15px;
+  }
+
+
+  .navidad-header::after {
+    right: 12px;
+    top: 15px;
+  }
+
+
+  /* LOGOS */
+
+  .navidad-logos {
+    gap: 10px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .navidad-logo-box {
+    width: 125px;
+    height: 110px;
+
+    padding: 8px;
+
+    border-radius: 14px;
+  }
+
+
+  .navidad-logo-separator {
+    font-size: 17px;
+  }
+
+
+  /* TÍTULO */
+
+  .navidad-title-intro {
+    font-size: 23px;
+  }
+
+
+  .navidad-title h1 {
+    font-size: clamp(45px, 15vw, 72px);
+
+    letter-spacing: -2px;
+  }
+
+
+  .navidad-year {
+    font-size: 38px;
+  }
+
+
+  .navidad-subtitle {
+    font-size: 17px;
+  }
+
+
+  /* EVENTO */
+
+  .navidad-form-event-info {
+    padding: 22px 15px;
+  }
+
+
+  .navidad-form-event-info > div {
+    font-size: 17px;
+  }
+
+
+  .navidad-form-event-info .navidad-transport {
+    font-size: 14px;
+
+    line-height: 1.4;
+  }
+
+
+  /* INTRO */
+
+  .navidad-form-intro {
+    padding: 32px 18px 25px;
+  }
+
+
+  .navidad-form-intro h2 {
+    font-size: 29px;
+  }
+
+
+  .navidad-form-intro p {
+    font-size: 16px;
+  }
+
+
+  /* FORMULARIO */
+
+  .navidad-form-container {
+    padding: 8px 8px 30px;
+  }
+
+
+  .navidad-form-section {
+    padding: 22px 16px;
+
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+  }
+
+
+  .navidad-form-section-title {
+    gap: 8px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .navidad-form-section-title h2 {
+    font-size: 21px;
+  }
+
+
+  .navidad-form-group {
+    margin-bottom: 20px;
+  }
+
+
+  .navidad-form-group label {
+    font-size: 16px;
+
+    line-height: 1.4;
+  }
+
+
+  .navidad-form input[type="text"],
+  .navidad-form input[type="tel"],
+  .navidad-form input[type="email"],
+  .navidad-form select,
+  .navidad-form textarea {
+    padding: 13px 14px;
+
+    font-size: 16px;
+  }
+
+
+  /* RADIO */
+
+  .navidad-radio-group {
+    gap: 8px;
+  }
+
+
+  .navidad-radio-option {
+    flex: 1 1 auto;
+
+    justify-content: center;
+
+    padding: 10px 15px;
+  }
+
+
+  /* BOTÓN */
+
+  .navidad-form-submit {
+    padding: 20px 5px 10px;
+  }
+
+
+  .navidad-button {
+    width: 100%;
+
+    font-size: 17px;
+
+    padding: 15px 18px;
+  }
+
+
+  .navidad-form-back {
+    padding: 22px 15px;
+  }
+
+
+  .navidad-form-back a {
+    font-size: 14px;
+  }
+
+
+  .navidad-website {
+    padding-bottom: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .navidad-logo-box {
+    width: 108px;
+    height: 95px;
+  }
+
+
+  .navidad-logo-separator {
+    font-size: 14px;
+  }
+
+
+  .navidad-title h1 {
+    font-size: 43px;
+  }
+
+
+  .navidad-form-section {
+    padding: 20px 13px;
+  }
+
+
+  .navidad-radio-option {
+    width: 100% !important;
+
+    flex: 1 1 100%;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD / REDUCCIÓN DE MOVIMIENTO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .navidad-button,
+  .navidad-radio-option,
+  .navidad-form input,
+  .navidad-form select,
+  .navidad-form textarea,
+  .navidad-website a {
+    transition: none;
+  }
+
+}

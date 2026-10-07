@@ -2020,3 +2020,709 @@ body {
   }
 
 }
+
+/* ============================================================
+   GRACIAS — COMPARTIR NAVIDEÑO 2026
+   ============================================================ */
+
+.navidad-thanks-page {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 40px auto 70px;
+
+  padding: 0 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------------------
+   HEADER
+   ------------------------------------------------------------ */
+
+.navidad-thanks-header {
+  background:
+    linear-gradient(
+      rgba(255, 250, 239, 0.97),
+      rgba(255, 247, 231, 0.97)
+    );
+
+  border: 1px solid rgba(194, 133, 28, 0.35);
+
+  border-radius: 0 0 32px 32px;
+
+  padding: 45px 40px 38px;
+
+  text-align: center;
+
+  box-shadow:
+    0 12px 35px rgba(61, 48, 25, 0.10);
+}
+
+
+/* ------------------------------------------------------------
+   LOGOS
+   ------------------------------------------------------------ */
+
+.navidad-thanks-logos {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-bottom: 28px;
+}
+
+.navidad-thanks-logo-box {
+  width: 140px;
+  height: 140px;
+
+  padding: 9px;
+
+  box-sizing: border-box;
+
+  background: #fffdf8;
+
+  border: 3px solid #c58a27;
+
+  border-radius: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow:
+    0 5px 16px rgba(71, 52, 20, 0.14);
+}
+
+.navidad-thanks-logo-box img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+}
+
+.navidad-thanks-logo-separator {
+  color: #c98516;
+
+  font-size: 25px;
+}
+
+
+/* ------------------------------------------------------------
+   TITULO
+   ------------------------------------------------------------ */
+
+.navidad-thanks-title p {
+  margin: 0 0 5px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color: #073f35;
+
+  font-size: 27px;
+}
+
+.navidad-thanks-title h1 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color: #073f35;
+
+  font-size: clamp(65px, 10vw, 105px);
+
+  line-height: 0.9;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+}
+
+.navidad-thanks-year {
+  margin-top: 12px;
+
+  color: #c98516;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+  letter-spacing: 7px;
+}
+
+
+/* ------------------------------------------------------------
+   DIVISOR
+   ------------------------------------------------------------ */
+
+.navidad-thanks-divider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  max-width: 450px;
+
+  margin: 20px auto;
+
+  color: #c98516;
+
+  font-size: 18px;
+}
+
+.navidad-thanks-divider::before,
+.navidad-thanks-divider::after {
+  content: "";
+
+  height: 1px;
+
+  flex: 1;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      rgba(201, 133, 22, 0.55)
+    );
+}
+
+.navidad-thanks-divider::after {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      rgba(201, 133, 22, 0.55)
+    );
+}
+
+.navidad-thanks-subtitle {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 20px;
+
+  line-height: 1.5;
+
+  color: #073f35;
+}
+
+
+/* ------------------------------------------------------------
+   TARJETA PRINCIPAL
+   ------------------------------------------------------------ */
+
+.navidad-thanks-card {
+  max-width: 850px;
+
+  margin: 30px auto 22px;
+
+  padding: 35px 45px;
+
+  box-sizing: border-box;
+
+  background:
+    rgba(255, 253, 247, 0.97);
+
+  border: 1px solid rgba(194, 133, 28, 0.28);
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 25px rgba(61, 48, 25, 0.07);
+}
+
+.navidad-thanks-gift {
+  font-size: 42px;
+
+  margin-bottom: 8px;
+}
+
+.navidad-thanks-card h2 {
+  margin: 0 0 15px;
+
+  color: #073f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 30px;
+}
+
+.navidad-thanks-card p {
+  max-width: 700px;
+
+  margin: 10px auto;
+
+  color: #294a43;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+.navidad-thanks-main-text {
+  font-size: 18px !important;
+}
+
+
+/* ------------------------------------------------------------
+   EVENTO
+   ------------------------------------------------------------ */
+
+.navidad-thanks-event {
+  max-width: 850px;
+
+  margin: 22px auto;
+
+  padding: 28px 35px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(250, 243, 228, 0.98),
+      rgba(255, 250, 239, 0.98)
+    );
+
+  border-top: 2px solid #c98516;
+
+  border-bottom: 2px solid #c98516;
+
+  box-shadow:
+    0 5px 18px rgba(61, 48, 25, 0.06);
+}
+
+.navidad-thanks-event-title {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 18px;
+}
+
+.navidad-thanks-event-title span {
+  color: #c98516;
+
+  font-size: 17px;
+}
+
+.navidad-thanks-event-title h2 {
+  margin: 0;
+
+  color: #073f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 26px;
+}
+
+.navidad-thanks-event-details {
+  text-align: center;
+
+  color: #073f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.navidad-thanks-transport {
+  margin-top: 5px;
+
+  color: #315d53;
+
+  font-size: 15px;
+}
+
+
+/* ------------------------------------------------------------
+   MENSAJE FINAL
+   ------------------------------------------------------------ */
+
+.navidad-thanks-final {
+  max-width: 850px;
+
+  margin: 25px auto;
+
+  padding: 30px 25px;
+
+  text-align: center;
+}
+
+.navidad-thanks-heart {
+  color: #c98516;
+
+  font-size: 45px;
+
+  margin-bottom: 5px;
+}
+
+.navidad-thanks-final-main {
+  margin: 0;
+
+  color: #073f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 38px;
+
+  font-weight: 700;
+}
+
+.navidad-thanks-final > p:not(.navidad-thanks-final-main):not(.navidad-thanks-signature) {
+  color: #294a43;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+}
+
+.navidad-thanks-signature {
+  margin-top: 22px;
+
+  color: #073f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+.navidad-thanks-motto {
+  margin-top: 12px;
+
+  color: #c98516;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 20px;
+
+  font-style: italic;
+}
+
+
+/* ------------------------------------------------------------
+   BOTONES
+   ------------------------------------------------------------ */
+
+.navidad-thanks-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  max-width: 850px;
+
+  margin: 15px auto 25px;
+}
+
+.navidad-thanks-button {
+  display: inline-block;
+
+  min-width: 220px;
+
+  padding: 14px 25px;
+
+  box-sizing: border-box;
+
+  border-radius: 11px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.navidad-thanks-button:hover {
+  transform: translateY(-2px);
+}
+
+.navidad-thanks-button-primary {
+  background:
+    linear-gradient(
+      135deg,
+      #c92327,
+      #a9171b
+    );
+
+  color: white;
+
+  box-shadow:
+    0 7px 17px rgba(169, 23, 27, 0.20);
+}
+
+.navidad-thanks-button-secondary {
+  background: #073f35;
+
+  color: #fff9ed;
+
+  box-shadow:
+    0 7px 17px rgba(7, 63, 53, 0.18);
+}
+
+
+/* ------------------------------------------------------------
+   MENSAJE FINAL
+   ------------------------------------------------------------ */
+
+.navidad-thanks-footer-message {
+  text-align: center;
+
+  margin-top: 20px;
+
+  padding: 15px;
+}
+
+.navidad-thanks-footer-message p {
+  margin: 0;
+
+  color: #806f56;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+}
+
+
+/* ============================================================
+   RESPONSIVE — TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .navidad-thanks-page {
+    padding: 0 16px;
+
+    margin-top: 20px;
+  }
+
+  .navidad-thanks-header {
+    padding: 35px 25px;
+  }
+
+  .navidad-thanks-logo-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .navidad-thanks-title h1 {
+    font-size: 75px;
+  }
+
+  .navidad-thanks-card,
+  .navidad-thanks-event {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+}
+
+
+/* ============================================================
+   RESPONSIVE — CELULAR
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .navidad-thanks-page {
+    width: 100%;
+
+    padding: 0 10px;
+
+    margin: 10px auto 45px;
+  }
+
+  .navidad-thanks-header {
+    padding: 25px 15px 30px;
+
+    border-radius: 0 0 22px 22px;
+  }
+
+  .navidad-thanks-logos {
+    gap: 10px;
+
+    margin-bottom: 22px;
+  }
+
+  .navidad-thanks-logo-box {
+    width: 92px;
+    height: 92px;
+
+    padding: 7px;
+
+    border-width: 2px;
+
+    border-radius: 16px;
+  }
+
+  .navidad-thanks-logo-separator {
+    font-size: 17px;
+  }
+
+  .navidad-thanks-title p {
+    font-size: 21px;
+  }
+
+  .navidad-thanks-title h1 {
+    font-size: 55px;
+
+    letter-spacing: -1px;
+  }
+
+  .navidad-thanks-year {
+    font-size: 30px;
+
+    letter-spacing: 4px;
+  }
+
+  .navidad-thanks-subtitle {
+    font-size: 16px;
+  }
+
+  .navidad-thanks-card {
+    margin-top: 20px;
+
+    padding: 25px 18px;
+
+    border-radius: 19px;
+  }
+
+  .navidad-thanks-card h2 {
+    font-size: 25px;
+  }
+
+  .navidad-thanks-card p {
+    font-size: 15px;
+  }
+
+  .navidad-thanks-event {
+    padding: 23px 15px;
+
+    margin-top: 18px;
+  }
+
+  .navidad-thanks-event-title {
+    gap: 8px;
+  }
+
+  .navidad-thanks-event-title h2 {
+    font-size: 21px;
+  }
+
+  .navidad-thanks-event-details {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .navidad-thanks-transport {
+    font-size: 13px;
+  }
+
+  .navidad-thanks-final {
+    padding: 20px 10px;
+  }
+
+  .navidad-thanks-final-main {
+    font-size: 32px;
+  }
+
+  .navidad-thanks-final > p:not(.navidad-thanks-final-main):not(.navidad-thanks-signature) {
+    font-size: 16px;
+  }
+
+  .navidad-thanks-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .navidad-thanks-button {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+}

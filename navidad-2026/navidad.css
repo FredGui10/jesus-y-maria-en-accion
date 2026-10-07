@@ -1,0 +1,1103 @@
+/* =========================================================
+   COMPARTIR NAVIDEÑO 2026
+   DISEÑO EXCLUSIVO DEL EVENTO
+   ========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+  --navidad-crema: #f8f0df;
+  --navidad-crema-claro: #fffaf0;
+  --navidad-verde: #073c32;
+  --navidad-verde-suave: #145747;
+  --navidad-dorado: #c58a24;
+  --navidad-dorado-claro: #e2b45c;
+  --navidad-rojo: #c92828;
+  --navidad-rojo-oscuro: #a91f1f;
+  --navidad-blanco: #fffdf8;
+  --navidad-texto: #173d35;
+  --navidad-sombra: rgba(62, 43, 15, 0.16);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   FONDO GENERAL
+   ========================================================= */
+
+.navidad-body {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0) 25%
+    ),
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 25%
+    ),
+    linear-gradient(
+      135deg,
+      #f4e8d0 0%,
+      #fff9ed 45%,
+      #f1dfbd 100%
+    );
+
+  color: var(--navidad-texto);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+.navidad-page {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 35px 24px 60px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   DECORACIÓN NAVIDEÑA DEL FONDO
+   ========================================================= */
+
+.navidad-page::before,
+.navidad-page::after {
+  content: "✦";
+  position: absolute;
+
+  color: var(--navidad-dorado);
+  opacity: 0.55;
+
+  font-size: 34px;
+
+  pointer-events: none;
+}
+
+.navidad-page::before {
+  top: 45px;
+  left: 18px;
+}
+
+.navidad-page::after {
+  top: 130px;
+  right: 22px;
+}
+
+
+/* =========================================================
+   HEADER / LOGOS
+   ========================================================= */
+
+.navidad-header {
+  text-align: center;
+
+  padding: 15px 20px 25px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 253, 247, 0.95),
+      rgba(255, 248, 232, 0.78)
+    );
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 12px 35px rgba(71, 49, 18, 0.10);
+
+  border: 1px solid rgba(197, 138, 36, 0.22);
+
+  position: relative;
+}
+
+
+/* =========================================================
+   LOGOS
+   ========================================================= */
+
+.navidad-logos {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-bottom: 20px;
+}
+
+
+.navidad-logo-box {
+  width: 145px;
+  height: 145px;
+
+  padding: 9px;
+
+  background: #fff;
+
+  border: 3px solid var(--navidad-dorado);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 18px rgba(65, 43, 12, 0.16);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navidad-logo-box img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* Línea entre logos */
+
+.navidad-logo-separator {
+  color: var(--navidad-dorado);
+
+  font-size: 30px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.navidad-title-intro {
+  margin: 8px 0 0;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(1.8rem, 4vw, 3rem);
+
+  line-height: 1.1;
+}
+
+
+.navidad-title h1 {
+  margin: 4px 0 0;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(4rem, 10vw, 8rem);
+
+  line-height: 0.82;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+
+  text-shadow:
+    1px 1px 0 rgba(255,255,255,0.8);
+}
+
+
+.navidad-title h1 span {
+  display: block;
+
+  color: var(--navidad-dorado);
+
+  margin-top: 12px;
+
+  font-size: 0.83em;
+}
+
+
+/* =========================================================
+   AÑO
+   ========================================================= */
+
+.navidad-year {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(2.7rem, 6vw, 4.5rem);
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  position: relative;
+}
+
+
+.navidad-year::before,
+.navidad-year::after {
+  content: "✦";
+
+  color: var(--navidad-dorado);
+
+  font-size: 22px;
+
+  vertical-align: middle;
+
+  margin: 0 15px;
+}
+
+
+/* =========================================================
+   SEPARADOR
+   ========================================================= */
+
+.navidad-divider {
+  width: min(520px, 80%);
+
+  margin: 22px auto 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  color: var(--navidad-dorado);
+}
+
+
+.navidad-divider::before,
+.navidad-divider::after {
+  content: "";
+
+  height: 2px;
+
+  flex: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--navidad-dorado),
+      transparent
+    );
+}
+
+
+.navidad-divider span {
+  font-size: 22px;
+}
+
+
+/* =========================================================
+   SUBTÍTULO
+   ========================================================= */
+
+.navidad-subtitle {
+  margin: 12px auto 0;
+
+  max-width: 760px;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL EVENTO
+   ========================================================= */
+
+.navidad-event-info {
+  margin-top: 25px;
+
+  text-align: center;
+
+  padding: 25px 20px;
+
+  background:
+    rgba(255, 251, 241, 0.88);
+
+  border-top: 2px solid var(--navidad-dorado);
+  border-bottom: 2px solid var(--navidad-dorado);
+
+  box-shadow:
+    0 8px 25px rgba(65, 43, 12, 0.08);
+}
+
+
+.navidad-event-item {
+  color: var(--navidad-verde);
+
+  font-size: clamp(1.35rem, 3vw, 2.1rem);
+
+  line-height: 1.25;
+
+  margin: 7px 0;
+}
+
+
+.navidad-transport {
+  margin-top: 10px;
+
+  color: var(--navidad-verde-suave);
+
+  font-size: clamp(1rem, 2vw, 1.3rem);
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SECCIÓN ESPECIAL
+   ========================================================= */
+
+.navidad-special {
+  margin-top: 35px;
+
+  padding: 35px 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffaf0,
+      #f6e4c1
+    );
+
+  border: 1px solid rgba(197, 138, 36, 0.4);
+
+  border-radius: 26px;
+
+  box-shadow:
+    0 10px 30px var(--navidad-sombra);
+}
+
+
+.navidad-special-decoration {
+  font-size: 65px;
+
+  flex-shrink: 0;
+
+  filter:
+    drop-shadow(0 4px 5px rgba(0,0,0,0.15));
+}
+
+
+.navidad-special-content {
+  text-align: center;
+}
+
+
+.navidad-special-content h2 {
+  margin: 0 0 10px;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  font-style: italic;
+}
+
+
+.navidad-special-highlight {
+  color: var(--navidad-verde);
+
+  font-size: 1.25rem;
+
+  font-weight: bold;
+
+  margin: 8px auto 15px;
+}
+
+
+.navidad-special-content p {
+  line-height: 1.6;
+
+  font-size: 1.08rem;
+
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   REGISTRO
+   ========================================================= */
+
+.navidad-registration {
+  margin-top: 35px;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fffaf0,
+      #f2dfb7
+    );
+
+  border-radius: 28px;
+
+  border: 3px solid var(--navidad-dorado);
+
+  box-shadow:
+    0 14px 35px rgba(66, 44, 14, 0.14);
+
+  position: relative;
+}
+
+
+.navidad-registration-decoration {
+  color: var(--navidad-dorado);
+
+  font-size: 25px;
+
+  margin-bottom: 5px;
+}
+
+
+.navidad-registration h2 {
+  margin: 0 0 14px;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+
+.navidad-registration p {
+  max-width: 750px;
+
+  margin: 10px auto;
+
+  font-size: 1.08rem;
+
+  line-height: 1.6;
+}
+
+
+.navidad-registration-important {
+  color: var(--navidad-rojo);
+
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   BOTÓN
+   ========================================================= */
+
+.navidad-button {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 16px 34px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--navidad-rojo),
+      var(--navidad-rojo-oscuro)
+    );
+
+  color: white;
+
+  text-decoration: none;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.15rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.5px;
+
+  border-radius: 50px;
+
+  box-shadow:
+    0 7px 18px rgba(150, 24, 24, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.navidad-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 24px rgba(150, 24, 24, 0.35);
+}
+
+
+/* =========================================================
+   EXPERIENCIA
+   ========================================================= */
+
+.navidad-experience {
+  margin-top: 45px;
+
+  text-align: center;
+}
+
+
+.navidad-section-title {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+.navidad-section-title span {
+  color: var(--navidad-dorado);
+
+  font-size: 22px;
+}
+
+
+.navidad-section-title h2 {
+  margin: 0;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+
+.navidad-experience-intro {
+  max-width: 760px;
+
+  margin: 18px auto 30px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.navidad-experience-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+.navidad-experience-card {
+  padding: 28px 22px;
+
+  background:
+    rgba(255, 251, 242, 0.9);
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(197, 138, 36, 0.35);
+
+  box-shadow:
+    0 7px 22px rgba(70, 46, 13, 0.09);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.navidad-experience-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 28px rgba(70, 46, 13, 0.14);
+}
+
+
+.navidad-experience-icon {
+  font-size: 42px;
+
+  margin-bottom: 10px;
+}
+
+
+.navidad-experience-card h3 {
+  color: var(--navidad-verde);
+
+  font-size: 1.45rem;
+
+  margin: 8px 0;
+}
+
+
+.navidad-experience-card p {
+  margin: 0;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   MENSAJE FINAL
+   ========================================================= */
+
+.navidad-final {
+  margin-top: 50px;
+
+  padding: 45px 25px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 250, 238, 0.8),
+      rgba(244, 226, 192, 0.75)
+    );
+
+  border-radius: 30px;
+
+  border-top: 2px solid var(--navidad-dorado);
+
+  border-bottom: 2px solid var(--navidad-dorado);
+}
+
+
+.navidad-final-decoration {
+  color: var(--navidad-dorado);
+
+  font-size: 24px;
+}
+
+
+.navidad-final-title {
+  margin: 8px 0;
+
+  color: var(--navidad-verde);
+
+  font-size: clamp(3rem, 7vw, 5rem);
+
+  font-style: italic;
+
+  font-weight: bold;
+}
+
+
+.navidad-final-text {
+  font-size: 1.25rem;
+
+  margin: 10px 0;
+}
+
+
+.navidad-heart {
+  color: var(--navidad-rojo);
+
+  font-size: 45px;
+
+  margin: 10px 0;
+}
+
+
+.navidad-signature {
+  color: var(--navidad-verde);
+
+  line-height: 1.6;
+
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   ENLACE A LA WEB PRINCIPAL
+   ========================================================= */
+
+.navidad-website {
+  text-align: center;
+
+  padding: 35px 15px 10px;
+}
+
+
+.navidad-website p {
+  margin-bottom: 10px;
+
+  color: #5d5140;
+
+  font-size: 0.95rem;
+}
+
+
+.navidad-website a {
+  color: var(--navidad-verde);
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--navidad-dorado);
+
+  padding-bottom: 3px;
+
+  transition: color 0.2s ease;
+}
+
+
+.navidad-website a:hover {
+  color: var(--navidad-rojo);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .navidad-page {
+    padding: 25px 18px 50px;
+  }
+
+
+  .navidad-title h1 {
+    font-size: clamp(3.3rem, 11vw, 6rem);
+
+    letter-spacing: -2px;
+  }
+
+
+  .navidad-logo-box {
+    width: 125px;
+    height: 125px;
+  }
+
+
+  .navidad-special {
+    gap: 18px;
+  }
+
+
+  .navidad-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   CELULARES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .navidad-page {
+    padding: 12px 10px 35px;
+  }
+
+
+  .navidad-header {
+    padding: 18px 12px 25px;
+
+    border-radius: 20px;
+  }
+
+
+  /* LOGOS */
+
+  .navidad-logos {
+    gap: 12px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .navidad-logo-box {
+    width: 105px;
+    height: 105px;
+
+    padding: 6px;
+
+    border-width: 2px;
+
+    border-radius: 14px;
+  }
+
+
+  .navidad-logo-separator {
+    font-size: 20px;
+  }
+
+
+  /* TÍTULO */
+
+  .navidad-title-intro {
+    font-size: 1.55rem;
+  }
+
+
+  .navidad-title h1 {
+    font-size: clamp(3rem, 17vw, 5rem);
+
+    line-height: 0.85;
+
+    letter-spacing: -2px;
+  }
+
+
+  .navidad-year {
+    font-size: 2.8rem;
+
+    margin-top: 8px;
+  }
+
+
+  .navidad-year::before,
+  .navidad-year::after {
+    font-size: 15px;
+
+    margin: 0 7px;
+  }
+
+
+  /* SUBTÍTULO */
+
+  .navidad-subtitle {
+    font-size: 1.05rem;
+
+    line-height: 1.4;
+  }
+
+
+  /* INFORMACIÓN */
+
+  .navidad-event-info {
+    padding: 20px 12px;
+
+    margin-top: 18px;
+  }
+
+
+  .navidad-event-item {
+    font-size: 1.28rem;
+
+    margin: 9px 0;
+  }
+
+
+  .navidad-transport {
+    font-size: 0.95rem;
+
+    line-height: 1.4;
+  }
+
+
+  /* SECCIÓN ESPECIAL */
+
+  .navidad-special {
+    flex-direction: column;
+
+    padding: 28px 18px;
+
+    gap: 8px;
+
+    margin-top: 25px;
+  }
+
+
+  .navidad-special-decoration {
+    font-size: 50px;
+  }
+
+
+  .navidad-special-content h2 {
+    font-size: 1.8rem;
+  }
+
+
+  .navidad-special-content p {
+    font-size: 1rem;
+  }
+
+
+  /* REGISTRO */
+
+  .navidad-registration {
+    padding: 30px 18px;
+
+    margin-top: 25px;
+
+    border-radius: 22px;
+  }
+
+
+  .navidad-registration h2 {
+    font-size: 2rem;
+  }
+
+
+  .navidad-registration p {
+    font-size: 1rem;
+
+    line-height: 1.55;
+  }
+
+
+  .navidad-button {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    font-size: 1rem;
+  }
+
+
+  /* EXPERIENCIA */
+
+  .navidad-experience {
+    margin-top: 35px;
+  }
+
+
+  .navidad-section-title {
+    gap: 10px;
+  }
+
+
+  .navidad-section-title h2 {
+    font-size: 1.9rem;
+  }
+
+
+  .navidad-experience-intro {
+    font-size: 1rem;
+  }
+
+
+  .navidad-experience-card {
+    padding: 25px 18px;
+  }
+
+
+  /* FINAL */
+
+  .navidad-final {
+    margin-top: 35px;
+
+    padding: 35px 18px;
+  }
+
+
+  .navidad-final-title {
+    font-size: 3rem;
+  }
+
+
+  .navidad-final-text {
+    font-size: 1.05rem;
+  }
+
+
+  .navidad-signature {
+    font-size: 0.9rem;
+  }
+
+
+  /* WEB PRINCIPAL */
+
+  .navidad-website {
+    padding-top: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .navidad-logo-box {
+    width: 90px;
+    height: 90px;
+  }
+
+
+  .navidad-logos {
+    gap: 8px;
+  }
+
+
+  .navidad-title h1 {
+    font-size: 2.8rem;
+  }
+
+
+  .navidad-title-intro {
+    font-size: 1.35rem;
+  }
+
+
+  .navidad-event-item {
+    font-size: 1.15rem;
+  }
+
+}

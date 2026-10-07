@@ -2726,3 +2726,33 @@ body {
   }
 
 }
+
+/* PRUEBA GRACIAS */
+.navidad-thanks-page {
+  max-width: 1050px !important;
+  margin: 40px auto !important;
+  padding: 30px !important;
+  background: #fffaf0 !important;
+}
+
+.navidad-thanks-logos {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 25px !important;
+}
+
+.navidad-thanks-logo-box {
+  width: 140px !important;
+  height: 140px !important;
+  padding: 10px !important;
+  border: 3px solid #c98516 !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
+
+.navidad-thanks-logo-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}

@@ -1467,6 +1467,60 @@ body {
     }
 }
 
+/* Invitación a la adoración del Santísimo */
+.adoracion-card {
+  border-top: 3px solid var(--orange);
+  text-align: center;
+}
+
+.adoracion-card h3 {
+  color: var(--blue);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.adoracion-mensaje {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.adoracion-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease;
+}
+
+.adoracion-imagen:hover {
+  transform: scale(1.02);
+}
+
+.adoracion-horario {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+.adoracion-horario span {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.adoracion-direccion {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.adoracion-final {
+  color: var(--blue);
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 12px;
+}
+
 .navidad-button {
   display: inline-block;
 

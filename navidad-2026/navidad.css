@@ -2809,3 +2809,165 @@ body {
   }
 
 }
+
+/* ==========================================
+   PÁGINA DE INSCRIPCIONES CERRADAS
+   COMPARTIR NAVIDEÑO 2026
+========================================== */
+
+.pagina-cierre-navidad {
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #fff8ed, #f8ead8);
+  font-family: Arial, sans-serif;
+  color: #453526;
+}
+
+.cierre-container {
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  border: 2px solid #e8c99c;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(91, 57, 24, 0.13);
+}
+
+.cierre-decoracion {
+  padding: 22px 10px;
+  background: #174d38;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 8px;
+}
+
+.cierre-contenido {
+  padding: 35px 30px;
+}
+
+.cierre-icono {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.cierre-contenido h1 {
+  color: #a46b24;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.cierre-contenido h2 {
+  color: #174d38;
+  font-size: 1.4rem;
+  margin: 12px 0;
+}
+
+.cierre-separador {
+  width: 75px;
+  height: 3px;
+  background: #d6a34e;
+  margin: 24px auto;
+  border-radius: 5px;
+}
+
+.cierre-contenido p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 16px 0;
+}
+
+.cierre-aviso {
+  background: #fff5e8;
+  border: 1px solid #e8c99c;
+  border-left: 5px solid #b77b2c;
+  border-radius: 12px;
+  padding: 22px 18px;
+  margin: 28px 0;
+}
+
+.cierre-aviso-icono {
+  font-size: 30px;
+}
+
+.cierre-aviso h3 {
+  color: #9b5c1d;
+  font-size: 1.35rem;
+  margin: 10px 0;
+}
+
+.cierre-aviso p {
+  margin-bottom: 0;
+}
+
+.cierre-bendicion {
+  color: #174d38;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 25px !important;
+}
+
+.cierre-firma h3 {
+  color: #174d38;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.cierre-firma p {
+  color: #b77b2c;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.cierre-boton {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 25px;
+  background: #174d38;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cierre-boton:hover {
+  background: #23664b;
+  transform: translateY(-2px);
+}
+
+.cierre-pie {
+  background: #f7ead7;
+  padding: 17px;
+  color: #75532f;
+  font-size: 0.9rem;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 600px) {
+  .pagina-cierre-navidad {
+    padding: 15px 10px;
+  }
+
+  .cierre-contenido {
+    padding: 28px 20px;
+  }
+
+  .cierre-contenido h1 {
+    font-size: 1.7rem;
+  }
+
+  .cierre-contenido h2 {
+    font-size: 1.2rem;
+  }
+
+  .cierre-contenido p {
+    font-size: 1rem;
+  }
+}
